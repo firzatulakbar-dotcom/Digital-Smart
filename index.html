@@ -1,0 +1,148 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Smart | Cyber Mission</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <div class="glow glow-one"></div>
+    <div class="glow glow-two"></div>
+
+    <main class="container">
+
+        <header class="top-header">
+            <h1>✦ DIGITAL <span>SMART</span></h1>
+            <div class="header-tag">CYBER MISSION</div>
+        </header>
+
+        <!-- HALAMAN DEPAN -->
+        <section id="welcome" class="card welcome">
+            <div class="welcome-icon">⌘</div>
+            <p class="eyebrow">WELCOME TO THE DIGITAL WORLD</p>
+            <h2>CYBER <span>MISSION</span></h2>
+            <p class="description">
+                Uji pengetahuanmu tentang literasi digital,
+                keamanan internet, dan teknologi.
+            </p>
+
+            <label for="playerName">MASUKKAN NAMA PEMAIN</label>
+            <input
+                type="text"
+                id="playerName"
+                placeholder="Nama kamu..."
+                maxlength="25"
+                autocomplete="off"
+            >
+
+            <p id="nameError" class="error"></p>
+
+            <button id="startBtn" class="main-button">
+                MULAI PERMAINAN →
+            </button>
+
+            <div class="welcome-info">
+                <span>30 BANK SOAL</span>
+                <span>10 SOAL ACAK</span>
+                <span>100 POIN</span>
+            </div>
+        </section>
+
+        <!-- HALAMAN QUIZ -->
+        <section id="quiz" class="card game-card hidden">
+
+            <div class="player-info">
+                <div>
+                    <small>PEMAIN</small>
+                    <h3 id="displayName">Pemain</h3>
+                </div>
+                <div class="level-tag">LEVEL 01</div>
+            </div>
+
+            <div class="stats">
+                <div>
+                    <small>PERTANYAAN</small>
+                    <h2 id="counter">01 / 10</h2>
+                </div>
+                <div class="score-box">
+                    <small>TOTAL POIN</small>
+                    <h2>★ <span id="score">0</span></h2>
+                </div>
+            </div>
+
+            <div class="progress-track">
+                <div id="progress-bar"></div>
+            </div>
+
+            <div class="question-area">
+                <span id="question-number" class="mission-tag">
+                    MISSION 01
+                </span>
+
+                <h2 id="question">Memuat pertanyaan...</h2>
+
+                <div id="answers" class="answers"></div>
+
+                <div id="feedback" class="feedback"></div>
+
+                <button id="nextBtn" class="main-button hidden">
+                    PERTANYAAN SELANJUTNYA →
+                </button>
+            </div>
+
+        </section>
+
+        <!-- HALAMAN HASIL -->
+        <section id="result" class="card result hidden">
+            <div class="result-icon">🏆</div>
+            <p class="eyebrow">MISSION COMPLETED</p>
+
+            <h2 id="resultTitle">HASIL PERMAINAN</h2>
+
+            <p class="result-player">
+                Pemain: <strong id="resultName"></strong>
+            </p>
+
+            <div class="final-score">
+                <small>TOTAL SKOR</small>
+                <h1 id="finalScore">0/100</h1>
+            </div>
+
+            <p id="resultText"></p>
+
+            <div class="result-stats">
+                <div>
+                    <small>JAWABAN BENAR</small>
+                    <h2 id="correctCount">0</h2>
+                </div>
+                <div>
+                    <small>JAWABAN SALAH</small>
+                    <h2 id="wrongCount">0</h2>
+                </div>
+            </div>
+
+            <button id="restartBtn" class="main-button">
+                MAIN LAGI ↻
+            </button>
+
+            <button id="homeBtn" class="secondary-button">
+                KEMBALI KE BERANDA
+            </button>
+        </section>
+
+        <footer>
+            <h3>✦ DIGITAL SMART ✦</h3>
+            <p>Projek Literasi Digital | Kelas X SMA | Tema 1</p>
+        </footer>
+
+    </main>
+
+</body>
+</html>
